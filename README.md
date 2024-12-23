@@ -20,17 +20,18 @@ npm (comes with Node.js)
 PostgreSQL (running locally or on a server)
 Postman (optional, for testing APIs)
 pgAdmin (optional, for database management)
+
+
 Project Setup
+
 1. Clone the Repository
-bash
-Copy code
 git clone <repository_url>
 cd college-backend
+
 2. Install Dependencies
-bash
-Copy code
 npm install
-3. Configure Environment Variables
+
+4. Configure Environment Variables
 Create a .env file in the project root and add the following variables:
 
 env
@@ -56,12 +57,8 @@ Use the provided SQL scripts to create tables:
 5. Run Database Migrations (Optional)
 If using TypeORM migrations, ensure the database schema is in sync:
 
-bash
-Copy code
 npm run typeorm:run
 6. Start the Development Server
-bash
-Copy code
 npm run start:dev
 
 The application will start on http://localhost:3000.
@@ -70,17 +67,7 @@ API Documentation
 Swagger UI
 Swagger documentation is available at: 
 http://localhost:3000/api-docs
-Usage
-Authentication APIs
-Signup
-Endpoint: POST /auth/signup
-Request Body:
 
-
-{
-  "username": "admin",
-  "password": "admin123"
-}
 
 
 
@@ -96,4 +83,6 @@ login cred
   "username": "teacher",
   "password": "string"
 }
+
+
 
